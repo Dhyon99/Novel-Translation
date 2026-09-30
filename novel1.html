@@ -28,16 +28,33 @@
         }
 
         .chapter {
-            background: white;
-            padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 6px;
-        }
+    background: white;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+}
 
-        .chapter a {
-            text-decoration: none;
-            color: #0066cc;
-        }
+.chapter a {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.chapter a:hover {
+    background: #f0f0f0;
+}
+
+.chapter span:first-child {
+    font-weight: bold;
+}
+
+.chapter span:last-child {
+    color: #666;
+    text-align: right;
+}
 
         .back {
             display: inline-block;
@@ -60,20 +77,32 @@
     <a href="index.html" class="back">← Kembali ke Beranda</a>
 
     <div class="chapter">
-        <a href="bab1.html">Bab 1 — Awal Perjalanan</a>
-    </div>
+    <a href="bab1.html">
+        <span>Bab 1</span>
+        <span>Awal Perjalanan</span>
+    </a>
+</div>
 
-    <div class="chapter">
-        <a href="bab2.html">Bab 2 — Pertemuan Pertama</a>
-    </div>
+<div class="chapter">
+    <a href="bab2.html">
+        <span>Bab 2</span>
+        <span>Pertemuan Pertama</span>
+    </a>
+</div>
 
-    <div class="chapter">
-        <a href="bab3.html">Bab 3 — Sebuah Rahasia</a>
-    </div>
+<div class="chapter">
+    <a href="bab3.html">
+        <span>Bab 3</span>
+        <span>Sebuah Rahasia</span>
+    </a>
+</div>
 
-    <div class="chapter">
-        <a href="bab4.html">Bab 4 — Perjalanan Baru</a>
-    </div>
+<div class="chapter">
+    <a href="bab4.html">
+        <span>Bab 4</span>
+        <span>Perjalanan Baru</span>
+    </a>
+</div>
 
 </div>
 

@@ -3,22 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novel Saya</title>
+
+    <title>Perpustakaan Novel</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .search {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        .novel {
+            background: white;
+            padding: 18px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+
+        .novel h2 {
+            margin-top: 0;
+        }
+
+        .novel a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Novel Saya</h1>
+<header>
+    <h1>📚 Perpustakaan Novel</h1>
+    <p>Baca novel favoritmu</p>
+</header>
 
-    <p>Selamat datang di website novel saya.</p>
+<div class="container">
 
-    <h2>Daftar Novel</h2>
+    <input
+        type="text"
+        class="search"
+        placeholder="Cari novel..."
+    >
 
-    <ul>
-        <li>
-            <a href="novel1.html">Novel Pertama</a>
-        </li>
-    </ul>
+    <div class="novel">
+        <h2>Judul Novel Pertama</h2>
+        <p>Deskripsi singkat novel.</p>
+        <a href="#">Baca Novel →</a>
+    </div>
+
+    <div class="novel">
+        <h2>Judul Novel Kedua</h2>
+        <p>Deskripsi singkat novel.</p>
+        <a href="#">Baca Novel →</a>
+    </div>
+
+</div>
 
 </body>
 </html>

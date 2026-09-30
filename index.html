@@ -451,17 +451,30 @@
 
 
 <script>
-    function toggleTheme() {
-
-        document.body.classList.toggle("dark");
-
-        const button = document.querySelector(".theme-button");
-
-        if (document.body.classList.contains("dark")) {
-            button.innerHTML = "☀️ Light";
+    function setTheme(theme) {
+        if (theme === "dark") {
+            document.body.classList.add("dark");
+            document.querySelector(".theme-button").innerHTML = "☀️ Light";
         } else {
-            button.innerHTML = "🌙 Dark";
+            document.body.classList.remove("dark");
+            document.querySelector(".theme-button").innerHTML = "🌙 Dark";
         }
+    }
+
+    function toggleTheme() {
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "light");
+            setTheme("light");
+        } else {
+            localStorage.setItem("theme", "dark");
+            setTheme("dark");
+        }
+    }
+
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+        setTheme("dark");
     }
 </script>
 

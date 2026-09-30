@@ -7,54 +7,152 @@
     <title>Perpustakaan Novel</title>
 
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            color: #333;
+        * {
+            box-sizing: border-box;
         }
 
+        body {
+            margin: 0;
+            background: #f4f4f4;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        /* HEADER */
         header {
             background: #222;
             color: white;
-            padding: 20px;
-            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .header-content {
+            max-width: 1000px;
+            margin: auto;
         }
 
         header h1 {
             margin: 0;
+            font-size: 28px;
         }
 
-        .container {
-            max-width: 900px;
+        header p {
+            margin: 8px 0 0;
+            color: #ccc;
+        }
+
+        /* NAVIGASI */
+        nav {
+            background: #333;
+        }
+
+        .nav-content {
+            max-width: 1000px;
             margin: auto;
-            padding: 20px;
+            display: flex;
         }
 
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav a:hover {
+            background: #444;
+        }
+
+        /* KONTEN */
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 25px 20px;
+        }
+
+        /* PENCARIAN */
         .search {
             width: 100%;
-            padding: 12px;
-            box-sizing: border-box;
+            padding: 14px;
             border: 1px solid #ccc;
-            border-radius: 6px;
-            margin-bottom: 20px;
+            border-radius: 8px;
+            font-size: 15px;
+            margin-bottom: 25px;
+        }
+
+        /* JUDUL BAGIAN */
+        .section-title {
+            margin-bottom: 15px;
+        }
+
+        .section-title h2 {
+            margin: 0;
+        }
+
+        /* KARTU NOVEL */
+        .novel-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
         }
 
         .novel {
             background: white;
-            padding: 18px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
-        .novel h2 {
+        .novel h3 {
             margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        .novel p {
+            color: #666;
+            line-height: 1.5;
         }
 
         .novel a {
-            color: #0066cc;
+            display: inline-block;
+            margin-top: 8px;
+            padding: 9px 14px;
+            background: #222;
+            color: white;
             text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .novel a:hover {
+            background: #444;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 40px;
+            background: #222;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* UNTUK HP */
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            .nav-content {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 12px 20px;
+            }
+
+            .novel-list {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -62,31 +160,64 @@
 <body>
 
 <header>
-    <h1>📚 Perpustakaan Novel</h1>
-    <p>Baca novel favoritmu</p>
+    <div class="header-content">
+        <h1>📚 Perpustakaan Novel</h1>
+        <p>Kumpulan novel untuk dibaca kapan saja</p>
+    </div>
 </header>
+
+<nav>
+    <div class="nav-content">
+        <a href="index.html">Beranda</a>
+    </div>
+</nav>
 
 <div class="container">
 
     <input
         type="text"
         class="search"
-        placeholder="Cari novel..."
+        placeholder="🔎 Cari novel..."
     >
 
-    <div class="novel">
-        <h2>Judul Novel Pertama</h2>
-        <p>Deskripsi singkat novel.</p>
-        <a href="novel1.html">Baca Novel →</a>
+    <div class="section-title">
+        <h2>Novel Terbaru</h2>
     </div>
 
-    <div class="novel">
-        <h2>Judul Novel Kedua</h2>
-        <p>Deskripsi singkat novel.</p>
-        <a href="novel1.html">Baca Novel →</a>
+    <div class="novel-list">
+
+        <div class="novel">
+            <h3>Judul Novel Pertama</h3>
+
+            <p>
+                Sebuah novel tentang perjalanan,
+                pertemuan, dan rahasia yang tersembunyi.
+            </p>
+
+            <a href="novel1.html">
+                Baca Novel →
+            </a>
+        </div>
+
+        <div class="novel">
+            <h3>Judul Novel Kedua</h3>
+
+            <p>
+                Deskripsi singkat untuk novel kedua.
+            </p>
+
+            <a href="#">
+                Baca Novel →
+            </a>
+        </div>
+
     </div>
 
 </div>
 
+<footer>
+    <p>© 2026 Perpustakaan Novel</p>
+</footer>
+
 </body>
-    </html>
+</html>

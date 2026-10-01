@@ -275,8 +275,15 @@ footer {
     }
 
     .reader {
-        padding: 20px 16px;
-    }
+    margin: 15px 10px;
+    padding: 25px 18px;
+}
+
+.reader p {
+    font-size: 17px;
+    line-height: 1.9;
+    text-align: left;
+}
 
     .navigation {
         font-size: 14px;

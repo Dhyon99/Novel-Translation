@@ -394,3 +394,18 @@ body:has(.reader) .theme-button {
     color: var(--secondary);
     font-size: 13px;
 }
+
+.reader h1 {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    text-align: left !important;
+}
+
+.reader p {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+.reader {
+    padding-left: 18px;
+    padding-right: 18px;
+}

@@ -84,11 +84,21 @@
         }
     }
 
-    const savedTheme = localStorage.getItem("theme");
+    function loadTheme() {
+        const savedTheme = localStorage.getItem("theme");
 
-    if (savedTheme === "dark") {
-        setTheme("dark");
+        if (savedTheme === "dark") {
+            setTheme("dark");
+        } else {
+            setTheme("light");
+        }
     }
+
+    loadTheme();
+
+    window.addEventListener("pageshow", function() {
+        loadTheme();
+    });
 </script>
 
 </body>

@@ -515,3 +515,17 @@ body:has(.reader) .theme-button {
     }
 
 }
+
+/* JARAK DAFTAR BAB DESKTOP */
+
+@media (min-width: 601px) {
+
+    .chapter {
+        margin-bottom: 12px;
+    }
+
+    .chapter a {
+        padding: 17px 20px;
+    }
+
+}

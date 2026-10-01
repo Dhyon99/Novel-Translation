@@ -444,3 +444,12 @@ body:has(.reader) .theme-button {
     }
 
 }
+
+@media (min-width: 601px) {
+
+    .reader p {
+        font-size: 18px;
+        line-height: 2;
+    }
+
+}

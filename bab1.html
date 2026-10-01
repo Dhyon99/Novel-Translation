@@ -132,6 +132,22 @@
         fontSize = Number(localStorage.getItem("fontSize")) || 18;
         updateFontSize();
     });
+
+        // SIMPAN POSISI BACAAN
+
+    const chapterKey = "readingPosition-" + window.location.pathname;
+
+    window.addEventListener("scroll", function() {
+        localStorage.setItem(chapterKey, window.scrollY);
+    });
+
+    window.addEventListener("pageshow", function() {
+        const savedPosition = localStorage.getItem(chapterKey);
+
+        if (savedPosition !== null) {
+            window.scrollTo(0, Number(savedPosition));
+        }
+    });
 </script>
 </body>
     </html>

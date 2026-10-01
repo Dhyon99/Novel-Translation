@@ -442,6 +442,7 @@ body:has(.reader) .theme-button {
         padding-left: 45px;
         padding-right: 45px;
     }
+
 }
 
 @media (min-width: 601px) {
@@ -450,6 +451,7 @@ body:has(.reader) .theme-button {
         font-size: 18px;
         line-height: 2;
     }
+
 }
 
 @media (min-width: 601px) {
@@ -459,6 +461,7 @@ body:has(.reader) .theme-button {
         margin-left: auto;
         margin-right: auto;
     }
+
 }
 
 @media (min-width: 601px) {
@@ -471,6 +474,7 @@ body:has(.reader) .theme-button {
     nav a {
         padding: 14px 18px;
     }
+
 }
 
 @media (min-width: 601px) {
@@ -486,4 +490,16 @@ body:has(.reader) .theme-button {
     header p {
         margin-top: 8px;
     }
- }
+ 
+}
+
+/* DAFTAR NOVEL DESKTOP */
+
+@media (min-width: 901px) {
+
+    .novel-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+}

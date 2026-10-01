@@ -675,3 +675,20 @@ body:has(.reader) .theme-button {
     }
 
         }
+
+/* TOMBOL BACA DESKTOP */
+
+@media (min-width: 901px) {
+
+    .novel a {
+        padding: 10px 16px;
+        transition:
+            background-color 0.2s ease,
+            transform 0.2s ease;
+    }
+
+    .novel a:hover {
+        transform: translateY(-2px);
+    }
+
+}

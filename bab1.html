@@ -129,6 +129,11 @@ function changeFontSize(amount) {
 }
 
 updateFontSize();
+
+window.addEventListener("pageshow", function() {
+    fontSize = Number(localStorage.getItem("fontSize")) || 18;
+    updateFontSize();
+});
 </script>
 </body>
     </html>

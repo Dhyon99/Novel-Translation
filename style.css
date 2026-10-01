@@ -311,3 +311,27 @@ body:has(.reader) nav a {
 body:has(.reader) .theme-button {
     padding: 7px 11px;
 }
+/* KONTROL UKURAN TEKS */
+
+.reader-controls {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 35px;
+}
+
+.reader-controls button {
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    padding: 7px 13px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.reader-controls button:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+    }

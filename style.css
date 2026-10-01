@@ -721,3 +721,21 @@ body:has(.reader) .theme-button {
     }
 
 }
+
+/* NAVIGASI DESKTOP */
+
+@media (min-width: 901px) {
+
+    .nav-content {
+        min-height: 52px;
+    }
+
+    .nav-links {
+        align-items: center;
+    }
+
+    .theme-button {
+        margin-right: 0;
+    }
+
+}

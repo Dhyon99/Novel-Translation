@@ -27,7 +27,26 @@ body {
     background: var(--bg);
     color: var(--text);
     font-family: Georgia, "Times New Roman", serif;
-    transition: background 0.3s, color 0.3s;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+/* TRANSISI TEMA */
+
+header,
+nav,
+.novel,
+.chapter,
+.reader,
+.search,
+.theme-button,
+.reader-controls,
+footer {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
 }
 
 /* HEADER */
@@ -275,20 +294,21 @@ footer {
     }
 
     .reader {
-    margin: 15px 10px;
-    padding: 25px 18px;
-}
+        margin: 15px 10px;
+        padding: 25px 18px;
+    }
 
-.reader p {
-    font-size: 17px;
-    line-height: 1.9;
-    text-align: left;
-}
+    .reader p {
+        font-size: 17px;
+        line-height: 1.9;
+        text-align: left;
+    }
 
     .navigation {
         font-size: 14px;
     }
 }
+
 /* HEADER KHUSUS HALAMAN BACA */
 
 body:has(.reader) header {
@@ -311,6 +331,7 @@ body:has(.reader) nav a {
 body:has(.reader) .theme-button {
     padding: 7px 11px;
 }
+
 /* KONTROL UKURAN TEKS */
 
 .reader-controls {
@@ -354,7 +375,7 @@ body:has(.reader) .theme-button {
     margin-right: 0;
 }
 
-/* Kontrol ukuran teks */
+/* KONTROL UKURAN TEKS */
 
 .reader .reader-controls {
     display: inline-flex;
@@ -405,6 +426,7 @@ body:has(.reader) .theme-button {
     margin-left: 0 !important;
     padding-left: 0 !important;
 }
+
 .reader {
     padding-left: 18px;
     padding-right: 18px;

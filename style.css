@@ -289,3 +289,26 @@ footer {
         font-size: 14px;
     }
 }
+
+/* HEADER KHUSUS HALAMAN BACA */
+
+body:has(.reader) header {
+    padding: 20px 15px;
+}
+
+body:has(.reader) header h1 {
+    font-size: 24px;
+}
+
+body:has(.reader) header p {
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+body:has(.reader) nav a {
+    padding: 11px 14px;
+}
+
+body:has(.reader) .theme-button {
+    padding: 7px 11px;
+}

@@ -107,6 +107,31 @@
     window.addEventListener("pageshow", function() {
         loadTheme();
     });
+    let fontSize = Number(localStorage.getItem("fontSize")) || 18;
+
+function updateFontSize() {
+    document.querySelectorAll(".reader p").forEach(function(paragraph) {
+        paragraph.style.fontSize = fontSize + "px";
+    });
+}
+
+function changeFontSize(amount) {
+    fontSize += amount;
+
+    if (fontSize < 15) fontSize = 15;
+    if (fontSize > 24) fontSize = 24;
+
+    localStorage.setItem("fontSize", fontSize);
+    updateFontSize();
+}
+
+function resetFontSize() {
+    fontSize = 18;
+    localStorage.setItem("fontSize", fontSize);
+    updateFontSize();
+}
+
+updateFontSize();
 </script>
 </body>
     </html>

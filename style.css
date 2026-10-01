@@ -529,3 +529,15 @@ body:has(.reader) .theme-button {
     }
 
 }
+
+/* JUDUL BAB DESKTOP */
+
+@media (min-width: 601px) {
+
+    .reader h1 {
+        font-size: 28px;
+        line-height: 1.5;
+        margin-bottom: 35px;
+    }
+
+}

@@ -503,3 +503,15 @@ body:has(.reader) .theme-button {
     }
 
 }
+
+/* DAFTAR BAB DESKTOP */
+
+@media (min-width: 601px) {
+
+    .chapter {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}

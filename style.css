@@ -692,3 +692,21 @@ body:has(.reader) .theme-button {
     }
 
 }
+
+/* TEKS DAFTAR BAB DESKTOP */
+
+@media (min-width: 601px) {
+
+    .chapter a {
+        align-items: center;
+    }
+
+    .chapter span:first-child {
+        line-height: 1.5;
+    }
+
+    .chapter span:last-child {
+        white-space: nowrap;
+    }
+
+}

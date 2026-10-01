@@ -222,6 +222,23 @@
             window.scrollTo(0, Number(savedPosition));
         }
     });
+
+    function backToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+window.addEventListener("scroll", function() {
+    const button = document.getElementById("back-to-top");
+
+    if (window.scrollY > 300) {
+        button.classList.add("show");
+    } else {
+        button.classList.remove("show");
+    }
+});
 </script>
 
     <button id="back-to-top" onclick="backToTop()">↑</button>

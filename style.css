@@ -658,3 +658,20 @@ body:has(.reader) .theme-button {
     }
 
 }
+
+/* EFEK KARTU NOVEL DESKTOP */
+
+@media (min-width: 901px) {
+
+    .novel {
+        transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+    }
+
+    .novel:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    }
+
+        }

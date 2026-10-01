@@ -602,3 +602,15 @@ body:has(.reader) .theme-button {
     }
 
 }
+
+/* KONTEN UTAMA DESKTOP */
+
+@media (min-width: 601px) {
+
+    .container {
+        max-width: 1100px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+}

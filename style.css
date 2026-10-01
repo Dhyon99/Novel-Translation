@@ -315,29 +315,29 @@ body:has(.reader) .theme-button {
 
 .reader-controls {
     display: flex;
-    justify-content: flex-end;
-    gap: 4px;
-    margin-bottom: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3px;
+    margin-bottom: 18px;
 }
 
 .reader-controls button {
     border: none;
     background: transparent;
     color: var(--secondary);
-    padding: 4px 7px;
+    padding: 3px 5px;
     cursor: pointer;
     font-family: inherit;
+    font-size: 16px;
 }
 
 .reader-controls button:hover {
     color: var(--primary);
 }
 
-.reader-controls button:nth-child(2) {
-    font-size: 15px;
-}
-
-.reader-controls button:first-child,
-.reader-controls button:last-child {
-    font-size: 17px;
+#font-size-value {
+    min-width: 22px;
+    text-align: center;
+    color: var(--secondary);
+    font-size: 14px;
 }

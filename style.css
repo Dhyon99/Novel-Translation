@@ -541,3 +541,13 @@ body:has(.reader) .theme-button {
     }
 
 }
+
+/* JARAK TEKS NOVEL DESKTOP */
+
+@media (min-width: 601px) {
+
+    .reader p {
+        line-height: 2.1;
+    }
+
+}

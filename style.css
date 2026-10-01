@@ -341,3 +341,56 @@ body:has(.reader) .theme-button {
     color: var(--secondary);
     font-size: 14px;
 }
+
+/* PENYESUAIAN HALAMAN BACA */
+
+.reader {
+    text-align: left;
+}
+
+.reader h1 {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Kontrol ukuran teks */
+
+.reader .reader-controls {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin: 0 0 22px 0;
+    padding: 3px;
+
+    border: 1px solid var(--border);
+    border-radius: 6px;
+
+    background: var(--bg);
+}
+
+.reader .reader-controls button {
+    border: none;
+    background: transparent;
+    color: var(--secondary);
+
+    padding: 4px 7px;
+    margin: 0;
+
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.reader .reader-controls button:hover {
+    color: var(--primary);
+}
+
+.reader #font-size-value {
+    min-width: 24px;
+    text-align: center;
+    color: var(--secondary);
+    font-size: 13px;
+}

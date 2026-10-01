@@ -289,7 +289,6 @@ footer {
         font-size: 14px;
     }
 }
-
 /* HEADER KHUSUS HALAMAN BACA */
 
 body:has(.reader) header {

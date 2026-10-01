@@ -762,6 +762,14 @@ body:has(.reader) .theme-button {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 
     z-index: 1000;
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+#back-to-top.show {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /* EFEK TOMBOL KEMBALI KE ATAS */
